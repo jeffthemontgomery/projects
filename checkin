@@ -1,0 +1,27 @@
+print('Hello! Welcome in, we have just a few questions to get you checked in today')
+
+
+fname = input ("What is your first name?")
+lname = input ("What is your last name?")
+print(f'Hi there {fname}, {lname} Nice to meet you. Just a few more questions for your visit.')
+
+f_color = input("What is your favorite color?")
+print(f'{f_color} is my favorite too! '
+      f'Okay, two more questions.')
+birth_year = input('what is your birth year?')
+age = 2023 - int(birth_year)
+if int(age) >=21:print("Great! we can get margaritas next door!")
+if int(age) <=21:print("Well, it's always good to have a DD.")
+
+print("Alright, last questions, and then we are all done.")
+
+weight_lbs = input("What is your approximate weight?")
+height_ft = input("What is your approximate height? Input as a decimal example 5 foot 6 would be 5.5.")
+if int(weight_lbs) <=80:print("Woo! You need to get to Grandmas house for some loaded potatoes and biscuits!")
+if int(height_ft) <=6:print("Well, I won't tell anyone on tinder. Your secret is safe with me.")
+weight_kg = int(weight_lbs) * 0.45
+height_m = int(height_ft) / 0.0254
+
+print(f'Alright {fname}, {lname} I have you checked in with a weight of {weight_kg}, at a height {height_m}. '
+      f'You are {age}, '
+      f'and you and I have a favorite color of {f_color}. Does that all sound right?')
